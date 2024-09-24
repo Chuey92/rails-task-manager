@@ -5,7 +5,8 @@
     <li>
       <strong>Title:</strong> <%= link_to task.title, task_path(task) %><br>
       <strong>Details:</strong> <%= task.details %><br>
-      <strong>Completed:</strong> <%= task.completed ? "Yes" : "No" %>
+      <strong>Completed:</strong> <%= task.completed ? "Yes" : "No" %><br>
+      <%= link_to 'Edit', edit_task_path(task) %>
     </li>
   <% end %>
 </ul>

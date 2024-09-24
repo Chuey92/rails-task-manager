@@ -10,6 +10,7 @@ Rails.application.routes.draw do
   get "manifest" => "rails/pwa#manifest", as: :pwa_manifest
 
   get "tasks", to: "tasks#index"
+  get "tasks/:id", to: "tasks#show", as: :task
   # Defines the root path route ("/")
   # root "posts#index"
 end
